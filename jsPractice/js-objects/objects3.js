@@ -13,7 +13,7 @@ function addToCartFunc (cart, product, quantity) {
 
 addToCartFunc(cart, 'banana', 1)
 addToCartFunc(cart, 'kiwi', 2)
-// console.log(cart);
+console.log(cart);
 
 let word = "apple banana apple orange banana apple"
 
@@ -29,7 +29,7 @@ function countWords(word) {
     }
     return object
 }
-// console.log(countWords(word));
+console.log(countWords(word));
 
 const users = {
     user1: { name: 'Maksym', age: 25, isOnline: true },
@@ -47,7 +47,7 @@ function getAllOnlineUsers (users) {
     return  onlineUsersArray
 }
 
-// console.log(getAllOnlineUsers(users));
+console.log(getAllOnlineUsers(users));
 
 function findUserByName (users, name) {
     let foundByNameUser = {}
@@ -64,14 +64,10 @@ function findUserByName (users, name) {
 
 console.log(findUserByName(users, 'Oleh'));
 
-let userData = {
-    name: 'Vasya',
-    age: 11,
-    isOnline: true
-}
+
 function addUser (users, id, userData) {
     users[id] = userData
     return users
 }
 
-console.log(addUser(users, 'user4', userData));
+console.log(addUser(users, 'user4', userData = {name: 'Vasya', age: 11, isOnline: true}));
